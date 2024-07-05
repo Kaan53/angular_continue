@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngrx-state-management": {
+    "my-standalone-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngrx-state-management",
+            "outputPath": "dist/my-standalone-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngrx-state-management:build:production"
+              "buildTarget": "my-standalone-app:build:production"
             },
             "development": {
-              "buildTarget": "ngrx-state-management:build:development"
+              "buildTarget": "my-standalone-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "8f9d27d5-2740-4c74-9e9d-a493e96f43bf"
+    "analytics": "3da33f41-5806-44e4-a904-44e1361ce14e"
   }
 }

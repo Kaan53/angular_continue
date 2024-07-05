@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngrx-state-management": {
+    "my-module-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngrx-state-management",
+            "outputPath": "dist/my-module-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngrx-state-management:build:production"
+              "buildTarget": "my-module-app:build:production"
             },
             "development": {
-              "buildTarget": "ngrx-state-management:build:development"
+              "buildTarget": "my-module-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "8f9d27d5-2740-4c74-9e9d-a493e96f43bf"
+    "analytics": "8df4bba3-85d5-4379-8b1b-f992b0ff9fb8"
   }
 }

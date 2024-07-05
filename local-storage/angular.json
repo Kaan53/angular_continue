@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngrx-state-management": {
+    "local-storage": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngrx-state-management",
+            "outputPath": "dist/local-storage",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngrx-state-management:build:production"
+              "buildTarget": "local-storage:build:production"
             },
             "development": {
-              "buildTarget": "ngrx-state-management:build:development"
+              "buildTarget": "local-storage:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "8f9d27d5-2740-4c74-9e9d-a493e96f43bf"
+    "analytics": "b05e1cb5-2ee7-4e85-bfe7-8ecf6d23b695"
   }
 }
